@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('./resources/gradient-background.png');
+  background-repeat: repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main {
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  position: fixed;
+  width: 100%;
+  height: 36px;
+  background-color: #212225;
+  border-bottom:  1px solid #4aa788;
+  display: inline-flex;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navlink {
+  color: #D8D8D8;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+h1 {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
