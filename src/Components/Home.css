@@ -1,0 +1,45 @@
+#islands {
+    display: block;
+    margin-top: 50px;
+    /* margin-top: 60px; */
+    margin-bottom: 50px;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-image: url('../resources/dynamicbg/CanoeingBG.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+
+#bay {
+    display: static;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    /* background-image: url('../resources/dynamicbg/Bay.png'); */
+    background-size: stretch;
+    z-index: 2;
+}
+
+#waterfall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -102px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-image: url('../resources/dynamicbg/Waterfall.png');
+    background-size: stretch;
+    z-index: 3;
+}
+
+/* #content-background {
+    width: 
+}
+
+#content-background h1 {
+    
+} */
