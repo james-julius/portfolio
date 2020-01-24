@@ -35,7 +35,7 @@ function About() {
                 <figcaption>API Creation</figcaption>
             </span>
         </div>
-
+    <span className="separation-bar"></span>
     <h2>Technologies & Frameworks</h2>
     <div id="tech-container" className="flex-centered">
             <div id="techswitcher" className="flex-centered">
@@ -50,6 +50,7 @@ function About() {
                 <p>React.JS is a modern web development framework that allows you to build blazingly fast web-apps.</p>
             </div>
         </div>
+        <span className="separation-bar"></span>
     </div>
     )
 }

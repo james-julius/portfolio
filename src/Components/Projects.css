@@ -1,0 +1,42 @@
+#projects {
+    color: #D8D8D8;
+    flex-direction: column;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fig {
+    height: 20vw;
+    max-height: 200px;
+    height: 180px;
+    width: 300px;
+    border: 5px solid #4AA788;
+    border-radius: 9px;
+}
+
+#popcorn {
+    background-color: white;
+}
+
+#cricket {
+    background-color: white;
+}
+
+.project-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 5px;
+}
+
+figcaption {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    max-width: 250px;
+    text-align: justify;
+}

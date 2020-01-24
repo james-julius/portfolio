@@ -36,7 +36,8 @@ h3 {
     margin: 5px 0px;
 }
 
-figcaption {
+#skills-container figcaption {
+    text-align: center;
     margin-top: 5px;
     text-align: center;
     max-width: 100px;
@@ -54,19 +55,19 @@ figcaption {
 #leftTriangle {
     height: 0px;
     width: 0px;
-    border-top: 20px solid transparent;
-    border-right: 30px solid cornflowerblue;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 15px solid cornflowerblue;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid transparent;
 }
 
 #rightTriangle {
     height: 0px;
     width: 0px;
-    border-top: 20px solid transparent;
-    border-left: 30px solid cornflowerblue;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 15px solid cornflowerblue;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid transparent;
 }
 
 #imgAndCaption {
@@ -79,9 +80,19 @@ figcaption {
 }
 
 #tech-description {
-    height: 200px;
+    min-height: 100px;
+    height: auto;
     margin: 0px auto;
     padding: 7px;
+    border-radius: 5px;
     background-image: linear-gradient(rgba(253,253,253,.2), rgba(154,145,145,.2));
     width: 80%;
+}
+
+.separation-bar {
+    margin: 20px auto;
+    display: block;
+    background-color: #4AA788;
+    width: 188px;
+    height: 3px;
 }
