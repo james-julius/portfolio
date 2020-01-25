@@ -9,35 +9,39 @@ import ReactJPG from '../resources/Technologies/reactjs.png';
 
 function About() {
     return (
+    <>
     <div id="about">
         <h1>About me</h1>
-
-        <h2>Skills & Capabilities</h2>
-        <div id="skills-container" className="flex-centered">
-            <span className="flex-centered">
-                <img src={Website}/>
-                <figcaption>Website Development</figcaption>
-            </span>
-            <span className="flex-centered">
-                <img src={WebApp} />
-                <figcaption>Web App Development</figcaption>
-            </span>
-            <span className="flex-centered">
-                <img src={WebScrape}/>
-                <figcaption>Web Scraping</figcaption>
-            </span>
-            <span className="flex-centered">
-                <img src={Cloud} />
-                <figcaption>Cloud Deployment</figcaption>
-            </span>
-            <span className="flex-centered">
-                <img src={API} />
-                <figcaption>API Creation</figcaption>
-            </span>
+        <div id="desktop-skills-left">
+            <h2>Skills & Capabilities</h2>
+            
+            <div id="skills-container" className="flex-centered">
+                <span className="flex-centered">
+                    <img src={Website}/>
+                    <figcaption>Website Development</figcaption>
+                </span>
+                <span className="flex-centered">
+                    <img src={WebApp} />
+                    <figcaption>Web App Development</figcaption>
+                </span>
+                <span className="flex-centered">
+                    <img src={WebScrape}/>
+                    <figcaption>Web Scraping</figcaption>
+                </span>
+                <span className="flex-centered">
+                    <img src={Cloud} />
+                    <figcaption>Cloud Deployment</figcaption>
+                </span>
+                <span className="flex-centered">
+                    <img src={API} />
+                    <figcaption>API Creation</figcaption>
+                </span>
+            </div>
         </div>
-    <span className="separation-bar"></span>
-    <h2>Technologies & Frameworks</h2>
-    <div id="tech-container" className="flex-centered">
+    <span className="separation-bar" id="tech-separator"></span>
+    <div id="desktop-skills-right">
+        <h2 id="tech-header">Technologies & Frameworks</h2>
+        <div id="tech-container" className="flex-centered">
             <div id="techswitcher" className="flex-centered">
                 <span id="leftTriangle"></span>
                     <span id="imgAndCaption" className="flex-centered">
@@ -50,8 +54,10 @@ function About() {
                 <p>React.JS is a modern web development framework that allows you to build blazingly fast web-apps.</p>
             </div>
         </div>
-        <span className="separation-bar"></span>
     </div>
+    <span id="tech-bottom-separator" className="separation-bar"></span>
+    </div>
+    </>
     )
 }
 

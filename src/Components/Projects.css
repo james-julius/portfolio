@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+#projects h1 {
+    margin: 10px auto 20px;
+}
+
 .flex-centered {
     display: flex;
     justify-content: center;
@@ -29,14 +33,39 @@ fig {
 .project-container {
     flex-direction: column;
     text-align: center;
-    margin: 20px 5px;
+    margin: 10px 5px 40px 5px;
+}
+
+.project-container fig, img {
+    margin-bottom: 15px;
 }
 
 figcaption {
     display: flex;
     align-items: center;
-    margin: auto;
+    margin: 8px auto auto auto;
     width: 80%;
     max-width: 250px;
     text-align: justify;
+}
+
+@media only screen and (min-width: 400px) {
+
+    #projects h1 {
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: 70px;
+    }
+
+    .separation-bar {
+        display: none;
+    }
+
+    #desktop-flex-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
 }

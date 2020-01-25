@@ -5,6 +5,7 @@ body {
   overflow-y: scroll;
   background-image: url('./resources/gradient-background.png');
   background-repeat: repeat;
+  font-family: Arimo, sans-serif;
 }
 
 #main {
@@ -29,6 +30,8 @@ nav {
 
 nav img {
   position: fixed;
+  padding: 0px;
+  margin: auto;
   left: 5px;
 }
 

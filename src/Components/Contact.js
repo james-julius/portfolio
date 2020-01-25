@@ -6,7 +6,6 @@ import gitHub from '../resources/github.png';
 function Contact() {
     return (
     <div id="contact" className="flex-centered">
-        <span className="separation-bar"></span>
         <h1>Contact Me</h1>
         <p>Need Web Development services?<br/><br/>
         Drop me an email at:<br/>
@@ -18,7 +17,7 @@ function Contact() {
             <h2>Email:</h2>
             <input className="oneliner"  type="text" placeholder="Email..."/>
             <h2>Message:</h2>
-            <input id="message" type="text" placeholder="Message..."/>
+            <textarea id="message" placeholder="Message..."></textarea>
             <button type="submit">Send</button>
         </form>
 
