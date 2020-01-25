@@ -10,7 +10,7 @@ function Projects() {
         <div id="desktop-flex-container">
             <div className="project-container flex-centered">
                 <fig id="popcorn" className="flex-centered">
-                    <img src={Popcorn} height="140px" width="140px" alt="A popcorn emoji"></img>
+                    <a href="http://popcornmovies.surge.sh" target="_blank"><img src={Popcorn} height="140px" width="140px" alt="A popcorn emoji"></img></a>
                 </fig>
                 <h2>Popcorn</h2>
                 <figcaption>Popcorn is a movie-search web-app developed with React.JS and powered by a database of 100,000+ movies served via a custom Node.JS & SQLite API.</figcaption>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import Logo from '../resources/favicon/android-chrome-512x512.png';
+import Logo from '../resources/android-chrome-512x512.png';
 
 function NavBar() {
     const [NavHover, setNavHover] = useState(0);

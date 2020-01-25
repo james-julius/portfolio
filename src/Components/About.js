@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, {keyframes} from "styled-components";
 import './About.css';
 import Website from '../resources/Skills/website.png';
 import WebApp from '../resources/Skills/webapp.png';
@@ -7,26 +8,29 @@ import Cloud from '../resources/Skills/cloud.png';
 import API from '../resources/Skills/api.png';
 import ReactJPG from '../resources/Technologies/reactjs.png';
 
+
 function About() {
 
-    function clickHdl() {
-        let styleSheet = document.styleSheets[0];
-     
-        let animationName = `animation${Math.round(Math.random() * 100)}`;
-        
-        let keyframes =
-        `@-webkit-keyframes ${animationName} {
-            10% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)} 
-            90% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
-            100% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
-        }`;
-     
-        styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
-        
-        this.setState({
-          animationName: animationName
-        });
-      }
+    const flux = keyframes`
+        0% {background-position:0% 50%}
+        50% {background-position:100% 50%}
+        100% {background-position:0% 50%}
+    `;
+
+    const pulse = keyframes`
+        0% {height:17px, width: 17px}
+        50% {height:20px; width: 20px}
+        100% {height:17px, width: 17px}
+    `;
+
+    const Span = styled.span`
+        height: 17px;
+        width: 17px;
+        background: linear-gradient(90deg, #7763f8, #d15959);
+        background-size: 400% 400%;
+        animation: ${flux} 2s ease-in-out infinite, ${pulse} 2s ease-in-out infinite;
+    `;
+
     return (
     <>
     <div id="about">
@@ -62,11 +66,11 @@ function About() {
         <h2 id="tech-header">Technologies & Frameworks</h2>
         <div id="tech-container" className="flex-centered">
             <div id="techswitcher" className="flex-centered">
-                <span id="leftTriangle"></span>
+                <Span id="leftTriangle"></Span>
                     <span id="imgAndCaption" className="flex-centered">
                         <img src={ReactJPG} height="80px" width="80px"/>
                     </span>
-                <span id="rightTriangle"></span>
+                <Span id="rightTriangle"></Span>
             </div>
             <h3>React.JS</h3>
             <div id="tech-description" className="flex-centered">
