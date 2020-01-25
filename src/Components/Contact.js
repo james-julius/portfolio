@@ -6,6 +6,7 @@ import gitHub from '../resources/github.png';
 function Contact() {
     return (
     <div id="contact" className="flex-centered">
+        <span className="separation-bar" id="contact-separator"></span>
         <h1>Contact Me</h1>
         <p>Need Web Development services?<br/><br/>
         Drop me an email at:<br/>
@@ -21,10 +22,10 @@ function Contact() {
             <button type="submit">Send</button>
         </form>
 
-        <span className="separation-bar"></span>
+        <span className="separation-bar" id="social-separator"></span>
         <div id="socials" className="flex-centered">
-            <a href="https://github.com/waterways12" target="_blank"><img src={gitHub} alt="github" height="auto" width="80px"/></a>
-            <a href="https://stackexchange.com/users/16479864/james-darby" target="_blank"><img src={stackOverflow}  height="auto" width="200px" alt="stack overflow"/></a>
+            <a href="https://github.com/waterways12" target="_blank"><img src={gitHub} alt="github" height="auto" width="70px"/></a>
+            <a id="stack-overflow" href="https://stackexchange.com/users/16479864/james-darby" target="_blank" height="auto" width="100px"><img src={stackOverflow}  height="auto" width="200px" alt="stack overflow"/></a>
         </div>
     <span id="copyright">© James Darby {new Date().getFullYear()}</span>
     </div>

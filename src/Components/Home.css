@@ -60,7 +60,7 @@
     margin: 10px auto;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 900px) {
 
     #islands {background-image: url('../resources/dynamicbg/canoeingBG.jpg')}
     #bay {background-image: url('../resources/dynamicbg/Bay.png')}

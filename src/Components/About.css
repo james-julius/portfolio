@@ -59,22 +59,71 @@ h3 {
     width: 80%;
 }
 
-#leftTriangle {
+/* #leftTriangle {
     height: 0px;
     width: 0px;
     border-top: 10px solid transparent;
     border-right: 15px solid cornflowerblue;
     border-bottom: 10px solid transparent;
     border-left: 15px solid transparent;
+} */
+
+#leftTriangle {
+    height: 17px;
+    width: 17px;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+
+    background: linear-gradient(89deg, #6495ed, #fa6a56);
+    background-size: 100% 100%;
+    
+    -webkit-animation: Flux 2s ease infinite;
+    -moz-animation: Flux 2s ease infinite;
+    animation: Flux 2s ease infinite;
+    
+    @-webkit-keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 }
 
 #rightTriangle {
-    height: 0px;
-    width: 0px;
-    border-top: 10px solid transparent;
-    border-left: 15px solid cornflowerblue;
-    border-bottom: 10px solid transparent;
-    border-right: 15px solid transparent;
+    height: 17px;
+    width: 17px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+    background: linear-gradient(268deg, #6495ed, #fa6a56);
+    background-size: 100% 100%;
+    
+    -webkit-animation: Flux 2s ease infinite;
+    -moz-animation: Flux 2s ease infinite;
+    animation: Flux 2s ease infinite;
+    
+    @-webkit-keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 51%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 51%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Flux {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 51%}
+        100%{background-position:0% 50%}
+    }
 }
 
 #imgAndCaption {
@@ -108,6 +157,7 @@ h3 {
 
 @media only screen and (min-width: 400px) {
     #about {
+        height: 100vh;
         margin-top: 30px;
         display: inline-flex;
         justify-content: space-evenly;

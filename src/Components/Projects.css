@@ -50,7 +50,10 @@ figcaption {
 }
 
 @media only screen and (min-width: 400px) {
-
+    #projects {
+        width: 100%;
+    }
+    
     #projects h1 {
         width: 100%;
         margin-top: -20px;

@@ -8,6 +8,25 @@ import API from '../resources/Skills/api.png';
 import ReactJPG from '../resources/Technologies/reactjs.png';
 
 function About() {
+
+    function clickHdl() {
+        let styleSheet = document.styleSheets[0];
+     
+        let animationName = `animation${Math.round(Math.random() * 100)}`;
+        
+        let keyframes =
+        `@-webkit-keyframes ${animationName} {
+            10% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)} 
+            90% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
+            100% {-webkit-transform:translate(${Math.random() * 300}px, ${Math.random() * 300}px)}
+        }`;
+     
+        styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+        
+        this.setState({
+          animationName: animationName
+        });
+      }
     return (
     <>
     <div id="about">
