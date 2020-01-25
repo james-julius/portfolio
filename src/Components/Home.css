@@ -16,9 +16,12 @@
     background-repeat: no-repeat;
     background-image: url('../resources/dynamicbg/CanoeingBGmobile.jpg');
     background-size: cover;
-    z-index: 1;
+    /* z-index: 1; */
 }
-
+svg {
+    z-index: 1.5;
+    overflow: clip;
+}
 #bay {
     display: block;
     height: 100vh;
@@ -28,7 +31,8 @@
     overflow: clip;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 2;
+    /* z-index: 2; */
+    filter: url('#bay-waves')
 }
 
 #waterfall {
@@ -43,28 +47,38 @@
     background-repeat: no-repeat;
     background-image: url('../resources/dynamicbg/waterfallMobile.png');
     background-size: cover;
-    z-index: 3;
+    filter: url('#waterfall');
 }
 
 #content-background {
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    right: 50%;
     cursor: default;
     background-color: rgba(47,46,46,.3);
     width: 60%;
     max-width: 250px;
     border-radius: 20px;
     border: 1px solid #485A59;
+    z-index: 10;
 }
 
 #content-background h1 {
     font-size: 1.7rem;
     margin: 10px auto;
+    /* z-index: 999; */
 }
 
 @media only screen and (min-width: 900px) {
 
     #islands {background-image: url('../resources/dynamicbg/canoeingBG.jpg')}
     #bay {background-image: url('../resources/dynamicbg/Bay.png')}
-    #waterfall {background-image: url('../resources/dynamicbg/Waterfall.png')}
+    #waterfall {
+        background-image: url('../resources/dynamicbg/Waterfall.png');
+        position: relative;
+        bottom: 17vh;
+    }
 
     #islands, #bay, #waterfall  {
         width: auto;
