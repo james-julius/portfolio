@@ -24,24 +24,29 @@ svg {
 }
 #bay {
     display: block;
-    height: 100vh;
-    width:  100vw;
+    position: relative;
+    top: 0vh;
+    height: 100%;
+    width:  100%;
     margin: 0;
     padding: 0;
     overflow: clip;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url('../resources/dynamicbg/bayMobile.png');
+    opacity: 0.5;
     /* z-index: 2; */
     filter: url('#bay-waves')
 }
 
 #waterfall {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    position: relative;
+    top: -25vh;
+    right: .8vh;
+    height: 100%;
+    width: 100%;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
     padding: 0;
     overflow: clip;
     background-repeat: no-repeat;
@@ -52,15 +57,16 @@ svg {
 
 #content-background {
     position: absolute;
-    top: 40vh;
-    left: 40vw;
+    top: 42vh;
+    left: calc(50vw - 125px);
+    right: calc(50vw - 125px);
     right: 50%;
     cursor: default;
     background-color: rgba(47,46,46,.3);
-    width: 60%;
-    max-width: 250px;
+    width: 250px;
+    /* max-width: 250px; */
     border-radius: 20px;
-    border: 1px solid #485A59;
+    border: 1px solid rgb(44, 53, 52);
     z-index: 10;
 }
 
@@ -70,17 +76,28 @@ svg {
     /* z-index: 999; */
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1030px) {
 
     #islands {background-image: url('../resources/dynamicbg/canoeingBG.jpg')}
     #bay {background-image: url('../resources/dynamicbg/Bay.png')}
     #waterfall {
         background-image: url('../resources/dynamicbg/Waterfall.png');
-        position: relative;
-        bottom: 17vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* bottom: 5vh; */
+    }
+    #islands, #bay, #waterfall  {
+        height: 100vh;
+        width: 100vw;
     }
 
-    #islands, #bay, #waterfall  {
-        width: auto;
+    #content-background {
+        width: 300px;
+        height: 100px;
+    }
+
+    #content-background h1 {
+        font-size: 2rem;
     }
 }
