@@ -61,10 +61,12 @@ h3 {
 
 
 #leftTriangle {
+    cursor: pointer;
     clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
 #rightTriangle {
+    cursor: pointer;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
 
@@ -104,8 +106,10 @@ h3 {
 }
 @media only screen and (min-width: 400px) {
     #about {
-        height: 100vh;
-        margin-top: 30px;
+        display: block;
+        height: 100vh !important;
+        margin-top: 40px;
+        /* margin-bottom: ; */
         display: inline-flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -114,7 +118,7 @@ h3 {
     #about h1 {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
         text-align: center;
         /* background-color: firebrick; */
         width: 100%;
@@ -126,12 +130,12 @@ h3 {
 
     #desktop-skills-left {
         max-width: 500px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     #desktop-skills-right {
         max-width: 350px;
-        margin-bottom: 0px;
+        margin-bottom: 100px;
     }
 
     #tech-separator {
@@ -139,11 +143,21 @@ h3 {
     }
 
     #tech-description {
+        text-align: justify;
+        font-size: 1rem;
         max-width: 300px;
+    }
+
+    #tech-description p {
+        width: 90%;
     }
 
     #tech-header {
         margin-top: 0px;
+    }
+
+    figcaption {
+        font-size: 1rem;
     }
 
     #desktop-skills-left h2 {
@@ -158,6 +172,6 @@ h3 {
     .separation-bar, #tech-bottom-separator {
         width: 80%;
         height: 2px;
-        margin: 80px auto;
+        margin: 30px auto;
     }
 }
