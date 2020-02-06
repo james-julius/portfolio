@@ -6,6 +6,8 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import NavBar from './Components/NavBar';
 
+// Try flex-grow: 1 ?
+
 function App() {
   return (
     <div id="main">

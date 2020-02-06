@@ -17,13 +17,13 @@ function Projects() {
                 <figcaption>Popcorn is a movie-search web-app developed with React.JS and powered by a database of 100,000+ movies served via a custom Node.JS & SQLite API.</figcaption>
             </div>
 
-            {/* <div className="project-container flex-centered">
+            <div className="project-container flex-centered">
                 <figure id="cricket" className="flex-centered">
                     <img src={Cricket} height="auto" width="150px" alt="A cricket bat hitting a ball"></img>
                 </figure>
                 <h2>Cricket</h2>
                 <figcaption>Cricket is a React.JS booking app created for a Cricket coaching company. It allows players and coaches to log in and book sessions together.</figcaption>
-            </div> */}
+            </div>
         
             {/* <div className="project-container">
                 <figure></figure>
