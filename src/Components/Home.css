@@ -78,7 +78,7 @@ svg {
 
 @media only screen and (min-width: 1030px) {
 
-    #islands {background-image: url('../resources/dynamicbg/canoeingBG.jpg')}
+    #islands {background-image: url('../resources/dynamicbg/mainbg.jpg')}
     #bay {background-image: url('../resources/dynamicbg/Bay.png')}
     #waterfall {
         background-image: url('../resources/dynamicbg/Waterfall.png');
