@@ -6,6 +6,7 @@ import Cricket from '../resources/cricket.png';
 function Projects() {
     return (
     <div id="projects" className="flex-centered">
+        <a class="anchor" id="projects-anchor"></a>
         <h1>Projects</h1>
         <div id="desktop-flex-container">
             <div className="project-container flex-centered">

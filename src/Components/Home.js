@@ -6,6 +6,8 @@ function Home() {
 
     return (
         <div id="home">
+        // eslint-disable-next-line
+        <a class="anchor" id="home-anchor"></a>
             <div id="content-background">
                         <h1>James Darby</h1>
                         <h1>Web Developer</h1>

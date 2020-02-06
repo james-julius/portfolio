@@ -15,6 +15,7 @@ function Contact() {
 
     return (
     <div id="contact" className="flex-centered">
+        <a class="anchor" id="contact-anchor"></a>
         <span className="separation-bar" id="contact-separator"></span>
         <h1>Contact Me</h1>
         <p>Need Web Development services?<br/><br/>

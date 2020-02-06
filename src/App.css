@@ -8,6 +8,21 @@ body {
   font-family: Arimo, sans-serif;
 }
 
+.anchor {
+  display: inline-block;
+  position: relative;
+  top: -51px;
+  visibility: hidden;
+}
+
+#projects-anchor {
+  top: -71px;
+}
+
+#contact-anchor {
+  top: 0px;
+}
+
 #main {
   display:  flex;
   flex-direction: column;
