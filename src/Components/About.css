@@ -104,7 +104,15 @@ h3 {
         font-size: 1.2rem;
     }
 }
-@media only screen and (min-width: 400px) {
+
+@media only screen and (max-width: 449px) {
+    #about {
+        margin: 30px auto 160px auto;
+        min-height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 450px) {
     #about {
         display: block;
         height: 100vh !important;
