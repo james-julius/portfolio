@@ -23,6 +23,20 @@ body {
   top: -20px;
 }
 
+@media only screen and (min-width: 450px) {
+  #projects-anchor {
+    top: -150px;
+  }
+
+  #about-anchor {
+    top: -71px;
+  }
+  
+  #contact-anchor {
+    top: +20px;
+  }
+}
+
 #main {
   display:  flex;
   flex-direction: column;
