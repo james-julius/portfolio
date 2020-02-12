@@ -71,8 +71,11 @@ h3 {
 }
 
 #imgAndCaption {
+    height: 100px !important;
+    width: 100px !important;
     flex-direction: column;
     margin: 0px 5px;
+    /* padding: auto; */
 }
 
 #imgAndCaption img {
@@ -97,6 +100,21 @@ h3 {
     background-color: #4AA788;
     width: 188px;
     height: 3px;
+}
+
+/* iPhone viewport height collapses when scrolling - this detects it and prevents border collapse! */
+@media only screen and (max-height: 670px) {
+    #about {
+        /* background-color: coral; */
+        min-height: 100vh !important;
+    }
+}
+@media only screen and (max-height: 630px) {
+    #about {
+        margin-top: 0px;
+        /* background-color: blue; */
+        min-height: 120vh !important;
+    }
 }
 
 @media only screen and (max-width: 349px) {

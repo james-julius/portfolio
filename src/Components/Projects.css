@@ -50,9 +50,36 @@ figcaption {
     max-width: 250px;
     text-align: justify;
 }
+/* iPhone 6/7/8 here */
+@media only screen and (max-height: 670px) {
+    #projects {
+        /* background-color: coral; */
+        min-height: 150vh !important;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+/* iPhone viewport height collapses when scrolling - this detects it and prevents border collapse! */
+
+@media only screen and (max-height: 630px) {
+    #projects {
+        margin-top: 30px;
+        /* background-color: blue; */
+        min-height: 170vh !important;
+    }
+}
 
 @media only screen and (max-width: 449px) {
     #projects {min-height: 100vh}
+}
+
+@media only screen and (max-width: 400px) {
+    #projects {
+        min-height: 140vh;
+        margin-top: 200px;
+        margin-bottom: 15px;
+    }
 }
 
 @media only screen and (min-width: 450px) {

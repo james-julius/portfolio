@@ -78,13 +78,28 @@ h2, input {
 }
 
 #copyright {
-    margin: 10px 7px 5px auto;
+    margin: 30px auto 5px auto;
     color: #D8D8D8;
 }
 
 #contact h1 {
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-height: 670px) {
+    #contact {
+        /* background-color: coral; */
+        min-height: 140vh !important;
+    }
+}
+/* iPhone viewport height collapses when scrolling - this detects it and prevents border collapse! */
+@media only screen and (max-height: 630px) {
+    #contact {
+        margin-top: 0px;
+        /* background-color: blue; */
+        min-height: 170vh !important;
+    }
 }
 
 @media only screen and (max-width: 449px) {

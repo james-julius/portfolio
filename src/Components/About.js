@@ -39,12 +39,12 @@ function About() {
 
     const [techIndex, setTechIndex] = useState(0);
     const technologies = {
-        0: {name: 'React.JS', img: {src: reactPNG, h: 80, w:80}, description: "React.JS is a modern JavaScript web development framework that allows you to build blazingly fast, scalable web-apps."},
+        0: {name: 'React.JS', img: {src: reactPNG, h: 80, w:80}, description: "React.JS is a popular modern JavaScript web development framework that allows you to build blazingly fast, scalable web-apps."},
         1: {name: 'Node.JS', img: {src: nodePNG, h: 80, w: 80},  description: "Node.JS is a runtime environment for JavaScript. It allows you to create back-end servers and APIs using frameworks such as Express.JS"},
         2: {name: 'HTML 5', img: {src: htmlPNG, h: 80,w: 80},  description: "HTML (Hyper Text Markup Language) is the basic language of the web. Today, it’s important to use semantic HTML to make the web accessible."},
         3: {name: 'CSS 3', img: {src: cssPNG, h: 80, w: 58}, description: "CSS3 is the design language of the web - it allows you to add colour, spacing and style to websites. Otherwise, HTML is just plain old text and images!"},
         4: {name: 'MySQL', img: {src: mySqlPNG, h: 100, w: 80},  description: "MySQL is the world’s most popular open-source. It allows you to store your data in an accessible, secure and structured way."},
-        5: {name: 'AWS', img: {src: awsPNG, h: 40, w: 80},  description: "AWS is the world’s popular cloud hosting provider. I use it to host secure and scalable website back-ends for clients, including APIs and databases."},
+        5: {name: 'AWS', img: {src: awsPNG, h: 50, w: 100},  description: "AWS is the world’s popular cloud hosting provider. I use it to host secure and scalable website back-ends for clients, including APIs and databases."},
         6: {name: 'Netlify', img: {src: netlifyPNG, h: 80, w: 80},  description: "Netlify is a continuous web deployment service. I use it to live-update websites from code on my machine, to your website in under a minute."},
     };
 

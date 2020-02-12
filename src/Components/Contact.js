@@ -9,9 +9,20 @@ function Contact() {
     const [message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwT3X03QMhhfPifqFKHHFeT-NnMMXolapdpEbYTzJ5nvnKkBnw/exec';
+        let currentDate = new Date();
+        let formData = {
+            'timestamp': currentDate,
+            'email': email,
+            'message': message
+        }
         e.preventDefault();
-        console.log(name + '||' + email + '||' + message);
+        // console.log(name + '||' + email + '||' + message);
+        fetch(scriptURL, { method: 'POST', body: {formData}})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
     }
+          
 
     return (
     <div id="contact" className="flex-centered">
@@ -22,13 +33,13 @@ function Contact() {
         Drop me an email at:<br/>
         <span id="email">james@jamesjuliusdarby.com</span> or fill out the form below for an initial consultation and quote within 24 hours.</p>
         
-        <form className="flex-centered" onSubmit={handleSubmit}>
+        <form id="contactform" className="flex-centered" onSubmit={handleSubmit}>
             <h2>Name:</h2>
-            <input className="oneliner" type="text" placeholder="Name..." onChange={(e) => setName(e.target.value)}/>
+            <input className="oneliner" name="name" type="text" placeholder="Name..." onChange={(e) => setName(e.target.value)}/>
             <h2>Email:</h2>
-            <input className="oneliner"  type="text" placeholder="Email..." onChange={(e) => setEmail(e.target.value)}/>
+            <input className="oneliner" name="email" type="text" placeholder="Email..." onChange={(e) => setEmail(e.target.value)}/>
             <h2>Message:</h2>
-            <textarea id="message" placeholder="Message..." onChange={(e) => setMessage(e.target.value)}></textarea>
+            <textarea id="message" name="message" placeholder="Message..." onChange={(e) => setMessage(e.target.value)}></textarea>
             <button type="submit">Send</button>
         </form>
 
