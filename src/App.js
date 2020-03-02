@@ -5,17 +5,17 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import NavBar from './Components/NavBar';
-
-// Try flex-grow: 1 ?
+import sharingImg from './resources/sharingHome.png';
 
 function App() {
   return (
     <div id="main">
       <NavBar/>
-      <Home />
+      <Home/>
       <About/>
-      <Projects />
-      <Contact />
+      <Projects/>
+      <Contact/>
+      <img src={sharingImg} style={{display: 'none'}}/>
     </div>
   );
 }
